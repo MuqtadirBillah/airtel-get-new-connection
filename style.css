@@ -65,9 +65,13 @@ body{
 .navDrop{
     background-color: #e30010;
     width: 100%;
-    min-height: 500px;
+    min-height: 100px;
     height: auto;
-    padding: 20px 5px;
+    padding: 20px 0;
+    text-align: center;
+}
+.nnn{
+    width: 100%;
 }
 .navDrop .btn{
     background-color: rgba(0, 0, 0, 0);
@@ -88,6 +92,7 @@ body{
 .navDrop .dropdown .dropdown-toggle{
     color: white;
     text-decoration: none;
+    font-size: xx-large;
 }
 .navDBut a{
     color: white;
