@@ -1,0 +1,653 @@
+body{
+
+}
+.main{
+    font-family: sans-serif;
+    min-height: 1000px;
+}
+
+/* header styling */
+.header{
+}
+
+.loginDiv{
+    text-align: right;
+    padding: 0px 200px;
+    padding-top: 10px;
+    margin-bottom: -15px;
+}
+.loginDivCon{
+    margin-right: 25px;
+    display: inline;
+    text-align: center;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.loginDivCon:hover{
+    display: inline;
+    border-top: 3px solid #e30010;
+    text-align: center;
+    padding-right: 5px;
+    color: #e30010;
+}
+.loginDiv img{
+    width: 20px;
+    display: inline-block;
+    /* border: 2px solid red; */
+    margin-top: -3px;
+}
+.loginDiv p{
+    display: inline-block;
+    /* margin-top: 10px; */
+    color: #313131;
+    font-size: smaller;
+}
+
+.header hr{
+    height: 1px;
+    /* background-color: rgb(207, 207, 207); */
+    line-height: 0;
+}
+
+/* ------------------------------------------------------------- */
+
+/* navbar Dropdown styling */
+
+.navBut{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    font-size: large;
+    display: none;
+}
+.navBut:focus{
+    outline-width: 0;
+}
+.navDrop{
+    background-color: #e30010;
+    width: 100%;
+    min-height: 500px;
+    height: auto;
+    padding: 20px 5px;
+}
+.navDrop .btn{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+.navDrop .btn::after{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+.navDrop .btn:focus{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+.navDrop .btn:visited{
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+}
+.navDrop .dropdown .dropdown-toggle{
+    color: white;
+    text-decoration: none;
+}
+.navDBut a{
+    color: white;
+    text-decoration: none;
+}
+.navDBut a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.DBut a{
+    color: white;
+    text-decoration: none;
+}
+.navDD a{
+    color: white;
+    text-decoration: none;
+}
+.navDD a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.navDrop .dropdown-menu{
+    background-color: #e30010;
+    border: 0px;
+    color: white;
+}
+.navDrop .dropdown-item{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+}
+.navDrop .dropdown-item:hover{
+    color: white;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0);
+}
+.navDD{
+    background-color: #e30010;
+}
+.navddVis{
+    display: none;
+}
+
+
+.navBar{
+    background-color: white;
+    /* border: 2px solid red; */
+}
+.navUp{
+    background-color: white;
+    /* border: 2px solid green; */
+    padding: 0px 200px;
+}
+.brand-name{
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+.brand-name img{
+    width: 150px;
+}
+.searchBar{
+    /* border: 1px solid purple; */
+    display: inline-block;
+    height: 40px;
+}
+.searchBar input{
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 20px;
+    padding: 0 10px;
+    color: rgb(150, 150, 150);
+}
+.searchBar input:focus{
+    outline-width: 0;
+}
+.searchBar button{
+    background-color: #e30010;
+    color: white;
+    border-radius: 50%;
+    border: 5px solid #e30010;
+    margin-left: 10px;
+    font-size: larger;
+}
+.searchBar button:hover{
+    background-color: #d40311;
+    border: 5px solid #d40311;
+    font-size: larger;
+}
+
+/* Nav down styling */
+.navDown{
+    text-align: center;
+    background-color: #222222;
+    color: white;
+    padding: 0px 200px;
+}
+.mobile-item{
+    padding-top: 20px;
+}
+.international-item{
+    padding-top: 20px;
+}
+.services-item{
+    padding-top: 20px;
+}
+.support-item{
+    padding-top: 20px;
+}
+.navDown-DD{
+    background-color: #e30010;
+    min-height: 300px;
+    padding: 20px;
+    display: none;
+}
+.navDown-DD a{
+    color: white;
+}
+.navDown-DD a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* DD-M */
+.navDown-DD-m{
+    background-color: #e30010;
+    min-height: 300px;
+    padding: 20px;
+    display: none;
+}
+.navDown-DD-m a{
+    color: white;
+}
+.navDown-DD-m a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* DD-I */
+.navDown-DD-i{
+    background-color: #e30010;
+    min-height: 300px;
+    padding: 20px;
+    display: none;
+}
+.navDown-DD-i a{
+    color: white;
+}
+.navDown-DD-i a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* DD-SE */
+.navDown-DD-se{
+    background-color: #e30010;
+    min-height: 300px;
+    padding: 20px;
+    display: none;
+}
+.navDown-DD-se a{
+    color: white;
+}
+.navDown-DD-se a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/* DD-SU */
+.navDown-DD-su{
+    background-color: #e30010;
+    min-height: 300px;
+    padding: 20px;
+    display: none;
+}
+.navDown-DD-su a{
+    color: white;
+}
+.navDown-DD-su a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.dd-head{
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 50px;
+    line-height: 80px;
+    color: white;
+}
+.ddd-head{
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 10px;
+    /* line-height: 80px; */
+    color: white;
+}
+.mobile-d{
+    color: white;
+    font-weight: 400;
+}
+.mobile-d .row{
+    padding: 0 200px;
+    text-align: justify;
+}
+.international-d{
+    color: white;
+    font-weight: 400;
+    display: none;
+}
+.international-d .row{
+    padding: 0 200px;
+    text-align: justify;
+}
+.Services-d{
+    color: white;
+    font-weight: 400;
+    display: none;
+}
+.Services-d .row{
+    padding: 0 200px;
+    text-align: justify;
+}
+.support-d{
+    color: white;
+    font-weight: 400;
+    display: none;
+}
+.support-d .row{
+    padding: 0 200px;
+    text-align: justify;
+}
+
+/* ---------------------------------------------------------------------------- */
+
+
+/* main Image styling */
+
+.mainImageDiv{
+    min-height: 450px;
+    height: 35vh;
+    background-color: red;
+    position: relative;
+    background-image: url("main.jpg");
+    background-size: 100% 100%;
+}
+.mainImageTxt{
+    width: auto;
+    position: absolute;
+    bottom: 30px;
+    right:25%;
+    left:25%;
+    color: white;
+}
+.mainImageTxt h1{
+    text-align: left;
+    width: auto;
+    font-weight: 600;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif sans-serif;
+}
+.mainImageTxt p{
+    text-align: left;
+    width: auto;
+}
+.getCon{
+    padding-top: 10px;
+    text-align: center;
+    background-color: white;
+}
+.getCon h3{
+    display: inline-block;
+    border-bottom: 10px solid #e30010;
+    padding-bottom: 10px;
+    color: black;
+}
+/* ---------------------------------------------------------------------------- */
+
+/* Order styling */
+
+.orderDiv{
+    background-color: #ededed;
+    min-height: 300px;
+    padding: 100px 200px;
+}
+.orderCat{
+
+}
+.orderCat button{
+    color: black;
+}
+.accBut{
+    font-weight: 600;
+    display: inline;
+}
+.accBut:hover{
+    font-weight: 700;
+    display: inline;
+}
+.accBut h6:hover{
+    text-decoration: none;
+}
+.orderCat button{
+    color: rgb(85, 85, 85);
+}
+.orderCat button a{
+    color: black;
+}
+.orderCat button:hover{
+    text-decoration: none;
+    color: black;
+}
+.orderCat button::after{
+    text-decoration: none;
+    color: black;
+}
+.orderCat button i{
+    color:#e30010;
+    font-weight: 400;
+    margin-right: 10px;
+    font-size: larger;
+}
+.colOne{
+}
+.colOne h5{
+    text-align: center;
+    margin: 10px 0;
+}
+.colOne form{
+    width: 50%;
+    margin:  0 auto;
+    margin-top: 30px;
+}
+.colOne form tr{
+    margin-top: 30px;
+}
+.ccla{
+    background-color: red;
+}
+.colOne input{
+}
+.colOne label{
+    text-align: left;
+    color: rgb(150, 150, 150);
+}
+.colOne td{
+    padding: 0 10px;
+    /* text-align: left; */
+    width: 300px;
+}
+.ColOne-td-L{
+    width: 200px;
+    text-align: left;
+}
+.ColOne-td-L{
+    width: 200px;
+}
+.colOneLab{
+    margin-right: 10px;
+    font-weight: 500;
+}
+.star{
+    color: red;
+}
+.sub{
+    color: red;
+}
+
+.colOneNDiv{
+    display: inline-block;
+    margin-top: 30px;
+}
+.colOneNext{
+    background-color: #b3b3b3;
+    color: white;
+    border: 2px solid #b3b3b3;
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+.colOneNext:hover{
+    background-color: #b3b3b3;
+}
+.colOneNext a{
+    color: white;
+    text-decoration: none;
+}
+.colOneNext a:hover{
+    color: white;
+    text-decoration: none;
+}
+.colOneNext button p{
+    color: white;
+}
+.dot{
+    color: rgba(0, 0, 0, 0);
+}
+
+
+/* colapse two  */
+
+
+.colTwoNDiv{
+    display: inline-block;
+    margin-top: 30px;
+}
+.colTwoNext{
+    background-color: #b3b3b3;
+    color: white;
+    border: 2px solid #b3b3b3;
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+.colTwoNext:hover{
+    background-color: #b3b3b3;
+}
+.colTwoNext a{
+    color: white;
+    text-decoration: none;
+}
+.colTwoNext a:hover{
+    color: white;
+    text-decoration: none;
+}
+.colTwoNext button p{
+    color: white;
+}
+
+
+/* colapse three  */
+
+
+.colThreeNDiv{
+    display: inline-block;
+    margin-top: 30px;
+}
+.colThreeNext{
+    background-color: #b3b3b3;
+    color: white;
+    border: 2px solid #b3b3b3;
+    padding: 10px 40px;
+    border-radius: 40px;
+}
+.colThreeNext:hover{
+    background-color: #b3b3b3;
+}
+.colThreeNext a{
+    color: white;
+    text-decoration: none;
+}
+.colThreeNext a:hover{
+    color: white;
+    text-decoration: none;
+}
+.colThreeNext button p{
+    color: white;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+  }
+  
+  .btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+
+  .sucMes{
+      text-align: center;
+      margin-top: 50px;
+  }
+
+/* ---------------------------------------------------------------------------- */
+
+/* footer styling */
+
+.footer{
+    background-color: #222222;
+    min-height: 300px;
+    padding: 50px 200px;
+}
+.footer .row{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 2px solid white; */
+}
+.footer .row h4{
+    color: #d6dfe2;
+}
+.footer .row h5{
+    color: #5a6160;
+}
+.footer .row h5 a{
+    color: #5a6160;
+}
+.footer .row h5 a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.footer .copy{
+    margin-top: 50px;
+}
+.footer .copy p{
+    color: white;
+    line-height: 10px;
+}
+.footer .copy .reserve{
+    color: #5a6160;
+}
+.footer .copy a{
+    color: white;
+}
+.fIcon{
+    font-size: x-large;
+    text-align: right;
+}
+.fIcon i{
+    margin-left: 20px;
+}
+.fIcon i:hover{
+    color: rgb(211, 211, 211);
+}
+
+/* ---------------------------------------------------------------------------- */
+
+
+                            /* media query */
+
+@media only screen and (max-device-width: 600px) {
+    .navUp{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .navDown{
+        display: none;
+        background-color: red;
+    }
+    .navBut{
+        display: inline-block;
+    }
+    .orderDiv{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .footer{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .footer .copy p{
+        color: white;
+        line-height: 20px;
+    }
+}
