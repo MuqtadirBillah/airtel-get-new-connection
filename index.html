@@ -371,9 +371,14 @@
                   <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                         <div class="colOne">
-                            <h5>Get your 4G SIM today</h5>
+                            <!-- <h5>Get your 4G SIM today</h5> -->
                             <form action="" class="">
-                                <table>
+                                <div class="radio">
+                                    Are you an airtel Customer?<br />
+                                    <input type="radio" class="airCus" name="airCus" id="airCus" value="Yes" /> Yes
+                                    <input type="radio" class="airCus" name="airCus" id="airCus" value="No" /> No
+                                </div>
+                                <table class="hide" id="prodTable">
                                     <tr>
                                         <td><label for=""><span class="star">* </span>Name<br /> <span class="dot">.</span></label></td>
                                         <td><input type="text" name="fName" id="fName" required /><br /></td>
@@ -383,24 +388,28 @@
                                         <td><input type="text" name="fAdd" id="fAdd" required /><br /></td>
                                     </tr>
                                     <tr>
-                                        <td><label for=""><span class="star">* </span>Airtel Number (eg: 0751234567)</label></td>
+                                        <td>
+                                            <label for="" class="" id="eNum"><span class="star">* </span>Existing Number (eg: 0751234567)</label>
+                                                <label for="" class="hide" id="aNum"><span class="star">* </span> Airtel Number (eg: 0751234567)</label>
+                                        </td>
                                         <td><input type="text" name="fAir" id="fAir" required /><br /></td>
                                     </tr>
                                     <tr>
                                         <td><label for=""><span class="star">* </span>Other Number (eg: 0751234567)</label></td>
                                         <td><input type="text" name="fOt" id="fOt" /><br /></td>
                                     </tr>
-                                    <tr>
-                                        <td><sub class="sub"></sub></td>
-                                        <td>
-                                            <div class="colOneNDiv d-flex justify-content-center" disabled="disabled">
-                                                <button type="button" class="colOneNext" id="ColOneN" style="color: white;">Next</button>
-                                            </div>
-                                        </td>
-                                    </tr>
                                 </table>
+                                <div class="colOneNDiv d-flex justify-content-center" disabled="disabled">
+                                    <button type="button" class="colOneNext" id="ColOneN" style="color: white;">Submit</button>
+                                </div>
                                 <!-- <button>dsadasd</button> -->
                             </form>
+                            <div class="leftHand">
+                                <img src="al.png" alt="" />
+                            </div>
+                            <div class="rightHand">
+                                <img src="ar.png" alt="" />
+                            </div>
                         </div>
                     </div>
                   </div>
@@ -408,21 +417,46 @@
                 <div class="card">
                   <div class="card-header" id="headingTwo">
                     <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" id="colTwoBut" disabled="true" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <button class="btn btn-link collapsed disabled" id="colTwoBut" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                         <i class="far fa-circle"></i><h6 class="accBut">Information</h6>
                       </button>
                     </h5>
                   </div>
                   <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
-                        <div class="colTwo">
-                            <h5>Check you Monthly requirements</h5>
+                        <div style="color:red;">
+                            <h5>Your estimated spend for the month is<br />Rs. 610<br />You saved xx% with <b>airtel 4G</b></h5>
+                            <h4 style="font-weight: 700;">FREEDOM</h4>
+                        </div>
+                        <img src="colImg.jpg" alt="">
+                        <div style="color: rgb(161, 161, 161);">
+                            <h5><b>500MB/day</b> 4G Data<br /><b>Unlimited</b> AIRTEL local calls<br /><b>200 minutes</b> to other local networks<br /><b>500 local SMS</b><br />Validity - 30 days<br />0.5 cents + Govt.Tax per minute outgoing call rate<br />(T&C Apply)</h5>
+                        </div>
+                        <div class="colTwoNDiv d-flex justify-content-center">
+                            <button type="button" class="colTwoNext" id="ColTwoN" style="color: white;">Get Now</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed disabled" id="colThreeBut" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <i class="far fa-circle"></i><h6 class="accBut">Documents</h6>
+                      </button>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="colThree">
+                            <center>
+                            <h5 class="colThreeHead">Your Monthly Mobile Spend expenditure</h5>
                             <form action="">
                                 <table>
-                                    <tr>
-                                        <td><span class="star">*</span>Monthly Data requirement</td>
+                                    <tr class="trr">
+                                        <td><span class="star">*</span><span class="selectHead">Monthly Data requirement</span></td>
                                         <td>
-                                            <select name="monthly" id="monthly">
+                                            <select class="selectD" name="monthly" id="monthly">
                                                 <option value="-">
                                                     -
                                                 </option>
@@ -432,10 +466,10 @@
                                             </select>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td><span class="star">*</span>Monthly voice call requirement</td>
+                                    <tr class="trr">
+                                        <td><span class="star">*</span><span class="selectHead">Monthly voice call requirement</span></td>
                                         <td>
-                                            <select name="call" id="call">
+                                            <select class="selectD" name="call" id="call">
                                                 <option value="-">
                                                     -
                                                 </option>
@@ -445,10 +479,10 @@
                                             </select>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td><span class="star">*</span>Monthly local SMS requirement</td>
+                                    <tr class="trr">
+                                        <td><span class="star">*</span><span class="selectHead">Monthly local SMS requirement</span></td>
                                         <td>
-                                            <select name="sms" id="sms">
+                                            <select class="selectD" name="sms" id="sms">
                                                 <option value="-">
                                                     -
                                                 </option>
@@ -458,41 +492,12 @@
                                             </select>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td></td>
-                                        <td>
-                                            <div class="colTwoNDiv d-flex justify-content-center" disabled="disabled">
-                                                <button type="button" class="colTwoNext" id="ColTwoN" style="color: white;">Next</button>
-                                            </div>
-                                        </td>
-                                    </tr>
                                 </table>
+                                <div class="colThreeNDiv d-flex justify-content-center" disabled="disabled">
+                                    <button type="button" class="colThreeNext" id="ColThreeN" style="color: white;">Calculate</button>
+                                </div>
                             </form>
-                        </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                      <button class="btn btn-link collapsed" disabled="true" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <i class="far fa-circle"></i><h6 class="accBut">Documents</h6>
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <div class="upload-btn-wrapper">
-                            <button class="btn"><img src="front.png" alt="" /></button>
-                            <input type="file" class="frontFile" name="myfile" />
-                        </div>
-                        <br />
-                        <div class="upload-btn-wrapper">
-                            <button class="btn"><img src="back.png" alt="" /></button>
-                            <input type="file" class="backFile" name="myfile" />
-                        </div>
-                        <div class="colThreeNDiv d-flex justify-content-center" disabled="disabled">
-                            <button type="button" class="colThreeNext" id="ColThreeN" style="color: white;">Submit</button>
+                            </center>
                         </div>
                     </div>
                   </div>
@@ -509,7 +514,7 @@
     <div class="footer">
         <div class="container-fluid">
             <div class="row">
-                <div class="fAbout col-lg-3 col-md-3 col-sm-6">
+                <div class="fAbout col-lg-3 col-md-6 col-sm-12">
                     <h4>About Airtel</h4>
                     <br />
                     <h5><a href="#">Overview</a></h5>
@@ -518,7 +523,7 @@
                     <h5><a href="#">Press & Media</a></h5>
                     <h5><a href="#">Social Work</a></h5>
                 </div>
-                <div class="fProducts col-lg-3 col-md-3 col-sm-6">
+                <div class="fProducts col-lg-3 col-md-6 col-sm-12">
                     <h4>Products</h4>
                     <br />
                     <h5><a href="#">Prepaid</a></h5>
@@ -527,7 +532,7 @@
                     <h5><a href="#">Roaming</a></h5>
                     <h5><a href="#">Service (VAS)</a></h5>
                 </div>
-                <div class="fSupport col-lg-3 col-md-3 col-sm-6">
+                <div class="fSupport col-lg-3 col-md-6 col-sm-12">
                     <h4>Support</h4>
                     <br />
                     <h5><a href="#">Live Chat</a></h5>
@@ -536,7 +541,7 @@
                     <h5><a href="#">Coverage Map</a></h5>
                     <h5><a href="#">Contact Us</a></h5>
                 </div>
-                <div class="fBusiness col-lg-3 col-md-3 col-sm-6">
+                <div class="fBusiness col-lg-3 col-md-6 col-sm-12">
                     <h4>Business</h4>
                     <br />
                     <h5><a href="#">Business Solution</a></h5>
@@ -545,11 +550,11 @@
                 </div>
             </div>
             <div class="row copy">
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <p class="reserve">© 2017. Airtel Sri Lanka. All Rights Reserved</p>
                     <p><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></p>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="col-lg-6 col-md-12 col-sm-12">
                     <p class="fIcon"><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-youtube"></i></a></p>
                 </div>
             </div>
@@ -571,7 +576,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <!-- Script File -->
-    <script src="index.js"></script>
+    <script src="air.js"></script>
 
    <!-- <script>
         $(".enBut").click(function(event){
