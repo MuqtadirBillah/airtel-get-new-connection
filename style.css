@@ -511,6 +511,37 @@ body{
     bottom: 0;
     right: 0;
 }
+.colOne table{
+    margin-bottom: 50px;
+}
+.colOne table tr td{
+    /* padding-bottom: 5px;
+    padding-top: 5px; */
+    /* border: 1px solid red; */
+    height: 60px;
+}
+.selectHead{
+    font-weight: 550;
+}
+.selectD{
+    padding: 3px 0;
+    /* border: 2px solid #d40311; */
+    border-radius: 3px;
+    width: 100px;
+    /* background-color: rgb(99, 99, 99); */
+    /* color: black; */
+}
+.selectD option{
+    background-color: #d40311;
+    color: white;
+    padding: 5px 5px;
+}
+.selectD option::after{
+    background-color: #d40311;
+    color: white;
+    padding: 5px 5px;
+}
+
 
 
 /* colapse two  */
@@ -592,23 +623,9 @@ body{
     margin-bottom: 50px;
     font-weight: 500;
 }
-.trr td{
-    padding-bottom: 5px;
-    padding-top: 5px;
-    /* border: 1px solid red; */
-}
 .colThree table{
     margin-bottom: 50px;
     color: #bebebe;
-}
-.selectHead{
-    font-weight: 550;
-}
-.selectD{
-    padding: 3px 0;
-    border: 2px solid #bebebe;
-    border-radius: 3px;
-    width: 80px;
 }
 
 .upload-btn-wrapper {
@@ -727,9 +744,32 @@ body{
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) { 
+    
+    .orderDiv{
+        background-color: #ededed;
+        min-height: 300px;
+        padding: 100px 50px;
+    }
     .footer{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .fIcon{
+        font-size: x-large;
+        text-align: center;
+    }
+}
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    
+    .orderDiv{
+        background-color: #ededed;
+        min-height: 300px;
+        padding: 100px 10px;
+    }
+    .footer{
+        padding-left: 10px;
+        padding-right: 10px;
         text-align: center;
     }
     .fIcon{
