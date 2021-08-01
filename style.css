@@ -5,6 +5,9 @@ body{
     font-family: sans-serif;
     min-height: 1000px;
 }
+.hide{
+    display: none;
+}
 
 /* header styling */
 .header{
@@ -370,6 +373,10 @@ body{
 
 /* Order styling */
 
+.colBut{
+    background-color: ;
+}
+
 .orderDiv{
     background-color: #ededed;
     min-height: 300px;
@@ -413,6 +420,12 @@ body{
     font-size: larger;
 }
 .colOne{
+    position: relative;
+}
+.radio{
+    text-align: center;
+    color: rgb(85, 85, 85);
+    padding-bottom: 50px;
 }
 .colOne h5{
     text-align: center;
@@ -467,7 +480,7 @@ body{
     color: white;
     border: 2px solid #b3b3b3;
     padding: 10px 40px;
-    border-radius: 40px;
+    border-radius: 5px;
 }
 .colOneNext:hover{
     background-color: #b3b3b3;
@@ -486,6 +499,18 @@ body{
 .dot{
     color: rgba(0, 0, 0, 0);
 }
+.leftHand{
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.rightHand{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
 
 /* colapse two  */
@@ -495,12 +520,21 @@ body{
     display: inline-block;
     margin-top: 30px;
 }
+.colTwoHead{
+    color: #5a6160;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+.colTwo table tr td{
+    padding-right: 30px;
+}
 .colTwoNext{
     background-color: #b3b3b3;
     color: white;
     border: 2px solid #b3b3b3;
     padding: 10px 40px;
-    border-radius: 40px;
+    border-radius: 5px;
 }
 .colTwoNext:hover{
     background-color: #b3b3b3;
@@ -516,6 +550,9 @@ body{
 .colTwoNext button p{
     color: white;
 }
+#collapseTwo{
+    text-align: center;
+}
 
 
 /* colapse three  */
@@ -530,7 +567,7 @@ body{
     color: white;
     border: 2px solid #b3b3b3;
     padding: 10px 40px;
-    border-radius: 40px;
+    border-radius: 5px;
 }
 .colThreeNext:hover{
     background-color: #b3b3b3;
@@ -545,6 +582,33 @@ body{
 }
 .colThreeNext button p{
     color: white;
+}
+#collapseThree .card-body{
+    text-align: center;
+}
+.colThreeHead{
+    color: #5a6160;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-weight: 500;
+}
+.trr td{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* border: 1px solid red; */
+}
+.colThree table{
+    margin-bottom: 50px;
+    color: #bebebe;
+}
+.selectHead{
+    font-weight: 550;
+}
+.selectD{
+    padding: 3px 0;
+    border: 2px solid #bebebe;
+    border-radius: 3px;
+    width: 80px;
 }
 
 .upload-btn-wrapper {
@@ -576,6 +640,10 @@ body{
       margin-top: 50px;
   }
 
+    .colThree table td{
+        padding-left: 50px;
+    }
+
 /* ---------------------------------------------------------------------------- */
 
 /* footer styling */
@@ -591,6 +659,7 @@ body{
 }
 .footer .row h4{
     color: #d6dfe2;
+    margin-top: 50px;
 }
 .footer .row h5{
     color: #5a6160;
@@ -654,5 +723,17 @@ body{
     .footer .copy p{
         color: white;
         line-height: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .footer{
+        padding-left: 50px;
+        padding-right: 50px;
+        text-align: center;
+    }
+    .fIcon{
+        font-size: x-large;
+        text-align: center;
     }
 }
